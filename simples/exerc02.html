@@ -1,11 +1,17 @@
-<script>
-
-let temperaturaC = prompt("Temperatura em graus celsius")
-
-f = (temperaturaC * 9/5) + 32
-
-alert("Area do circulo é: \n", temperaturaC)
-console.log("A area do circulo é: \n", temperaturaC) // Escreve no console
-document.write("A area do circulo é:", temperaturaC) // Escreve no site
-
 </script> 
+
+<script>
+    // Escreva um programa para ler uma temperatura em graus Fahrenheit, calcular e escrever o valor correspondente em graus Celsius. (C = (F-32) * 5 / 9) 
+
+    //entrada
+    let temperaturaF = prompt("Temperatura em graus Fahrenheit?")
+
+    //processamento
+    let temperaturaC = (temperaturaF-32) * 5 / 9
+
+    //saida
+    document.write("Valor correspondente em graus Celsius: " + temperaturaC)
+    alert("Valor correspondente em graus Celsius: \n", temperaturaC)
+    console.log("Valor correspondente em graus Celsius: \n", temperaturaC) // Escreve no console
+    
+</script>
