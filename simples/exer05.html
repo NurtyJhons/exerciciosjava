@@ -1,0 +1,15 @@
+<script>
+
+let quilometragem = parseFloat(prompt("Digite a quilometragem rodada (em km):"));
+let consumoCombustivel = parseFloat(prompt("Digite o consumo de combustível (em litros):"));
+let receita = parseFloat(prompt("Digite a receita obtida (em R$):"));
+
+// Cálculo do consumo médio e lucro líquido
+let consumoMedio = quilometragem / consumoCombustivel;
+let lucroLiquido = receita - consumoCombustivel;
+
+// Exibição dos resultados
+document.write('Consumo médio de combustível:', consumoMedio);
+document.write('Lucro líquido:', lucroLiquido);
+
+</script>
