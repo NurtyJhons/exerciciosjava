@@ -1,0 +1,15 @@
+<script>
+    let nota1 = parseFloat(prompt("Nota 1"))
+    let nota2 = parseFloat(prompt("Nota 2")) // O parseFloat obriga que o numero selecionado pelo usuario se transforme em um numero
+
+    let media = (nota1+nota2)/2
+
+    if(media >= 6){
+        media_resultado = "Parabéns, você foi aprovado"
+    }
+    else{
+        media_resultado = "Infelizmente você foi reprovado"
+    }
+
+    document.write("A sua média foi: ", media_resultado)
+</script>
