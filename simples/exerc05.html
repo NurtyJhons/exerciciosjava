@@ -1,18 +1,28 @@
 <script>
-    //  Escreva um programa para ler um valor e escrever se é positivo ou negativo. Considere o valor zero como positivo. 
+// Dimensões da cozinha (em metros)
+const larguraParede = 5; // largura da parede
+const alturaParede = 3;  // altura da parede
 
-    // Entrada
-    let valor = prompt("Digite um valor")
+// Dimensões do azulejo (em metros)
+const larguraAzulejo = 0.3; // largura do azulejo
+const alturaAzulejo = 0.3;  // altura do azulejo
 
-    // Processamento
-    if(valor >=0){
-        resposta = "Positivo"
-    }
-    else{
-        resposta = "Negativo"
-    }
-    
-    //Saída
-    document.write(resposta)
+// Número de azulejos por caixa
+const azulejosPorCaixa = 10;
+
+// Calcula a área da parede
+const areaParede = larguraParede * alturaParede;
+
+// Calcula a área de um azulejo
+const areaAzulejo = larguraAzulejo * alturaAzulejo;
+
+// Calcula a área coberta por uma caixa de azulejos
+const areaCobertaPorCaixa = azulejosPorCaixa * areaAzulejo;
+
+// Calcula o número de caixas necessárias
+const numeroCaixas = areaParede / areaCobertaPorCaixa;
+
+// Mostra o resultado
+document.write("Você precisará de " + numeroCaixas + " caixas de azulejos.");
 
 </script>
